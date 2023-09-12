@@ -1,0 +1,40 @@
+1. Scenario Outline - Examples Table 
+2. Background 
+--------Cucumber key words-----------
+Feature:
+Scenario:
+Given
+Then 
+When
+But And
+Scenario Ouline:
+Examples:
+Backgrounds
+tags - We will learn Later. 
+
+Three components of cucumber
+Feature file    - Testcases
+Runner
+Step Defintion. - Selenium Implements  - BaseTest, BasePage and Pages.  
+
+---------------------------------------------
+DataTable , What are the other ways to take the input . 
+
+Framework
+We are going write only one step for each type of action . 
+
+Sendkeys - User enter into text box "logicalName" "value"
+Button Click - User click on Button "logicalName"
+RadioButton - User Click on RadioButton "logicalName"
+
+Pages - We store the Elements and its actions
+BasePage - should we extended by each page - Created the storage -Hashmap which holds the 
+           logicalname and By Object
+ Steps  - We are going to have cucumber annotations of the scenarions 
+           -I should call call?? Actions for the corresponding steps 
+           - Actions are in pages...  
+ BaseTest - common actions like launching the application is present. 
+
+
+
+
