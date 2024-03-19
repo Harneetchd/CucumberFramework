@@ -22,7 +22,7 @@ public class BaseTest
 	    driver.get(url);
   }
   
-  public static  WebDriver getDriver( )
+  public static  WebDriver getDriver()
   {
 	  if(driver== null) 
 	  {

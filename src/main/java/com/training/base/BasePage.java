@@ -22,7 +22,7 @@ public class BasePage
 		this.driver = driver;
 	}
 
-	public void addObject(String logicalName, By by)// adding to HASHMAP
+	public void addObject(String logicalName, By by)// create a method which :to adding to HASHMAP
 	{
 		objectRepo.put(logicalName, by);
 	}
@@ -191,4 +191,5 @@ public class BasePage
 	   wait.until(ExpectedConditions.visibilityOf(element));
 	   
    }
+   
 }

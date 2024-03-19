@@ -22,5 +22,6 @@ public class LoginPage extends BasePage
         addObject("RememberMe", By.xpath("//input[@class='r4 fl mr8']"));
         addObject("Login", By.id("Login"));
         addObject("Error Message", By.id("error"));
+        addObject("Logout",By.xpath("//div[@id='userNav-menuItems']/a[5]"));
 	}
 } 

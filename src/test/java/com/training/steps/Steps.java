@@ -2,7 +2,6 @@ package com.training.steps;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -28,12 +27,12 @@ public class Steps extends BaseTest
 		launchApplication();
 	}
 	
-	
 	@Given("User is on {string}")
 	public void user_is_on(String Page) throws InstantiationException, IllegalAccessException, ClassNotFoundException, IOException// on the login page
 	{
 		//page = new LoginPage(); it will have methods of both base page and elements of login page
 	    page = pageFactory.initialize(Page);
+	   // System.out.format("Thread ID - %2 - %s from %s feature file.\n", Thread.currentThread().getId());
 	}
 	
 	@When("Enter into Textbox {string} {string}")
@@ -95,6 +94,12 @@ public class Steps extends BaseTest
 	{
         page.clickonCustomizeMyTabs(logicalName);
 	}
+	
+	@Then("User Clicks logout {string}")
+	public void user_clicks_logout(String logicalName)
+	{
+		page.clickOnLogout(logicalName);
+	}
 
 	@Then("user selects from Customapp {string}")
 	public void user_selects_from_customapp(String logicalName)
@@ -119,9 +124,16 @@ public class Steps extends BaseTest
 	@After
 	public void teardown(Scenario scenario)
 	{
+//		if(scenario.isFailed())
+//		{
+//			byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+//			scenario.attach(screenshot, "image/png", scenario.getName());
+//		}
 		byte[] screenshot =((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 		scenario.attach(screenshot, "image/png", scenario.getName());
 		//driver.close();
 		driver=null;
+		
+		
 	}
 }

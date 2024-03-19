@@ -25,8 +25,8 @@ static CommonUtilities common = new CommonUtilities();
 		String packagename= getPackage();
 		String pageClassFullName = packagename + "."
 				+ pageName;
-		page = (BasePage) Class.forName(pageClassFullName)
-				.newInstance();
+		page = (BasePage) Class.forName(pageClassFullName).newInstance();
+				
 	
 		/*String formattedPageName = getRemovedSpaceName(pageName);
 		try {
