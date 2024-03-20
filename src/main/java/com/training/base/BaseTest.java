@@ -26,7 +26,8 @@ public class BaseTest
   {
 	  if(driver== null) 
 	  {
-	    WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver","/Users/harneetkaur/eclipse-workspace/CucumberFramework/mydriver/chromedriver");
+	    //WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 	  }
 	  return driver;
