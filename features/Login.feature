@@ -11,7 +11,7 @@ Given User gets "Error Message"
 Scenario: Login into Saleforce Application with valid usernme and valid password.
 Given User is on "LoginPage"
 When Enter into Textbox "Username" "harneetkaur@capitalforce.com"
-Then Enter into Textbox "Password" "hello@123"
+Then Enter into Textbox "Password" "Hello@1234"
 And Click on Button "Login"
 Given User is on "HomePage"
 
@@ -19,7 +19,7 @@ Given User is on "HomePage"
 Scenario: Login into Saleforce Application with valid usernme and valid password.
 Given User is on "LoginPage"
 When Enter into Textbox "Username" "harneetkaur@capitalforce.com"
-Then Enter into Textbox "Password" "hello@123"
+Then Enter into Textbox "Password" "Hello@1234"
 But Click on Checkbox "RememberMe" 
 And Click on Button "Login"
 Given User is on "HomePage"

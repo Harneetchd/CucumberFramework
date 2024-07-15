@@ -12,8 +12,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		features= "/Users/harneetkaur/eclipse-workspace/CucumberFramework/features/Login.feature" , 
         glue    = {"com.training.steps"}, 
         plugin  = {"pretty","html:target/cucumber-reports/cucumber.html",
-                            "json:target/cucumber-reports/cucumber.json"},
-        tags =  "@SmokeScenario"
+                            "json:target/cucumber-reports/cucumber.json"}
+        //tags =  "@SmokeScenario"
 		         )
 
  

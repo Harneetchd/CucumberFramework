@@ -24,7 +24,7 @@ public class Steps extends BaseTest
 	@Before
 	public void setUp() throws IOException
 	{
-		launchApplication();
+	   launchApplication();
 	}
 	
 	@Given("User is on {string}")
